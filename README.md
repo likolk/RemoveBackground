@@ -1,2 +1,2 @@
 # RemoveBackground
-Remove Background from any image
+Remove Background from Any Image
