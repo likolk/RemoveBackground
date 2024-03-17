@@ -20,6 +20,10 @@ def pricing():
 def contact():
     return render_template('contact.html')
 
+@app.route('/about')
+def about():
+    return render_template('about.html')
+
 @app.route('/upload', methods=['POST'])
 def upload_file():
     if request.method == 'POST':
