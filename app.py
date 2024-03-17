@@ -54,4 +54,5 @@ def get_images():
     return jsonify({'input_images': input_images_url, 'output_images': output_images_url})
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, port=5000)
+
