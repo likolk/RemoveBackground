@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Background Remover</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../static/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <nav>
+        <a href="/">Home</a>
+        <a href="#">About</a>
+        <a href="../contact">Contact</a>
+        <a href="../pricing">Pricing</a>
+    </nav>
+    <div class="container">
+        <h1 class="mb-4">Image Background Remover</h1>
+        <form class="upload-form" enctype="multipart/form-data" method="POST">
+            <div class="custom-file">
+                <input type="file" class="custom-file-input" name="file" accept="image/*" id="image-input">
+                <label class="custom-file-label" for="image-input">Choose file</label>
+            </div>
+            <!-- <button type="submit" class="btn btn-primary mt-3">Upload Image</button> -->
+        </form>
+        <progress id="progress-bar" value="0" max="100" style="width: 100%;"></progress>
+        <img src="" alt="Output Image" class="output-image mt-4" id="output-image" style="display: none;">
+        <button id="download-button" class="btn btn-primary mt-3" style="display: none;">Download Image</button>
+
+    </div>
+
+    <footer>
+        <p>&copy; Kelvin Likollari - Background Image Remover.</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="../static/website.js"></script>
+</body>
+</html>
