@@ -68,3 +68,5 @@ function downloadImage() {
     link.click();
     document.body.removeChild(link);
 }
+
+// track user's IP

@@ -78,3 +78,87 @@ footer {
     width: 100%;
     bottom: 0;
 }
+
+.before-after {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.before-after .image-container {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.before-after .image-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .before-after {
+        flex-direction: column;
+    }
+
+    .before-after .image-container {
+        margin: 10px 0;
+    }
+}
+
+.second {
+    color: #071313;
+}
+
+
+.testimonial-section {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.testimonial {
+    border: 1px solid #ff0000;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+    max-width: 600px; 
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fcffba
+}
+
+.testimonial-content {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.testimonial-content p {
+    margin-bottom: 5px;
+}
+
+.author {
+    font-style: italic;
+}
+
+
+.rating {
+    display: inline-block;
+  }
+  
+  .rating input {
+    display: none;
+  }
+  
+  .rating label {
+    font-size: 2em;
+    color: #ccc;
+    cursor: pointer;
+  }
+  
+  .rating input:checked ~ label {
+    color: #ffc700;
+  }
+  
+  .rating label:hover,
+  .rating label:hover ~ label {
+    color: #ffcd85;
+  }
